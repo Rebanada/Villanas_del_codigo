@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./estilos/reset.css" />
+    <link rel="stylesheet" href="./assets/css/contacto.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__base">
+        <h1 class="header__base--title">VILLANAS DEL CÓDIGO</h1>
+      </div>
+      <div class="header__bottom">
+        <nav class="navHeader">
+          <ul class="navHeader__list" id="menuh">
+            <li class="navHeader__list--item">
+              <a href="./index.html#team-section">EQUIPO</a>
+            </li>
+            <li class="navHeader__list--item">
+              <a href="./index.html#us-section">QUIÉNES SOMOS</a>
+            </li>
+            <li class="navHeader__list--item">
+              <a href="./contact.html">CONTACTO</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-contact"></section>
+
+      <section>
+        <article class="art1-contacto">
+          <h2>Contacto</h2>
+          <p class="art1-p1">
+            ¿Harta del tirano de tu jefe? ¿Harta de que no te valoren? Si la respuesta es sí,
+            facilítanos tus datos y únete a nuestro reinado del terror.
+          </p>
+          <p class="art1-p2">
+            Todos los campos marcados con <span class="asterisco">*</span> son obligatorios.
+          </p>
+        </article>
+        <article class="art2">
+          <form class="formulario" action="https://dev.adalab.es/api/form">
+            <label for="nombre">
+              <span class="span">Nombre completo <span class="asterisco">*</span></span>
+              <input
+                class="input"
+                type="text"
+                name="nombre"
+                id="nombre"
+                autocomplete="name"
+                required
+                placeholder=" Escriba aquí su nombre"
+              />
+            </label>
+            <label for="mail">
+              <span class="span">Email <span class="asterisco">*</span></span>
+              <input
+                class="input email"
+                type="text"
+                name="mail"
+                id="mail"
+                autocomplete="email"
+                required
+                placeholder="Por ejemplo, villanas@dominio.com"
+              />
+            </label>
+            <label for="tlf">
+              <span class="span">Teléfono</span>
+              <input
+                class="input tlfn"
+                type="tel"
+                name="tlf"
+                id="tlf"
+                placeholder="Escriba aquí su telefono"
+              />
+            </label>
+            <label for="mensaje">
+              <span class="span">Mensaje <span class="asterisco">*</span></span>
+              <textarea
+                class="textarea"
+                name="mensaje"
+                id="mensaje"
+                placeholder="Deje aquí su mensaje"
+              ></textarea>
+            </label>
+            <input type="submit" class="boton" value="Enviar" />
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small class="footer__copy">Villanas del código &copy; 2023</small>
+      <nav class="footer__menu">
+        <ul class="footer__menu--list">
+          <li><a href="../index.html#team-section">Equipo</a></li>
+          <li><a href="../index.html#us-section">Quiénes somos</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="footer__logo" href="https://adalab.es/" target="_blank" title="Adalab">
+        <img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo de Adalab" />
+      </a>
+    </footer>
+    <div class="footer2">
+      <article class="footer2__left">
+        <small class="footer2__left--copy">Villanas del código &copy; 2023</small>
+        <a class="footer__logo" href="https://adalab.es/" target="_blank" title="Adalab">
+          <img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo de Adalab" />
+        </a>
+      </article>
+      <article class="footer2__right">
+        <nav>
+          <ul class="footer__menu--list">
+            <li><a href="./index.html#team-section">Equipo</a></li>
+            <li><a href="./index.html#us-section">Quiénes somos</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </article>
+    </div>
+
+  </body>
+</html>

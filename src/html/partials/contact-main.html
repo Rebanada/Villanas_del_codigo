@@ -1,0 +1,63 @@
+<main>
+  <include src="./contact-hero-main.html"></include>
+  <section>
+    <article class="art1-contacto">
+      <h2>Contacto</h2>
+      <p class="art1-p1">
+        ¿Harta del tirano de tu jefe? ¿Harta de que no te valoren? Si la respuesta es sí,
+        facilítanos tus datos y únete a nuestro reinado del terror.
+      </p>
+      <p class="art1-p2">
+        Todos los campos marcados con <span class="asterisco">*</span> son obligatorios.
+      </p>
+    </article>
+    <article class="art2">
+      <form class="formulario" action="https://dev.adalab.es/api/form">
+        <label for="nombre">
+          <span class="span">Nombre completo <span class="asterisco">*</span></span>
+          <input
+            class="input"
+            type="text"
+            name="nombre"
+            id="nombre"
+            autocomplete="name"
+            required
+            placeholder=" Escriba aquí su nombre"
+          />
+        </label>
+        <label for="mail">
+          <span class="span">Email <span class="asterisco">*</span></span>
+          <input
+            class="input email"
+            type="text"
+            name="mail"
+            id="mail"
+            autocomplete="email"
+            required
+            placeholder="Por ejemplo, villanas@dominio.com"
+          />
+        </label>
+        <label for="tlf">
+          <span class="span">Teléfono</span>
+          <input
+            class="input tlfn"
+            type="tel"
+            name="tlf"
+            id="tlf"
+            placeholder="Escriba aquí su telefono"
+          />
+        </label>
+        <label for="mensaje">
+          <span class="span">Mensaje <span class="asterisco">*</span></span>
+          <textarea
+            class="textarea"
+            name="mensaje"
+            id="mensaje"
+            placeholder="Deje aquí su mensaje"
+          ></textarea>
+        </label>
+        <input type="submit" class="boton" value="Enviar" />
+      </form>
+    </article>
+  </section>
+</main>

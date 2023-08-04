@@ -1,0 +1,35 @@
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(../images/imagenheroprincipal.jpg);
+    background-size: cover;
+    margin-bottom: 45px;
+    @media screen and (min-width: 768px) {
+        justify-content: left;        
+    }
+    &__box{
+       
+        padding: 14px 15px 16px;
+        background-color: $third-background-color;
+        font-size: 18px;
+        color: $primary-color-text;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        line-height: 25px;
+        transform: translateY(30px);
+        @media screen and (min-width: 768px) {
+            opacity: 0.8;
+            transform: translateY(0);
+            margin-left: 46px;
+            padding: 15px 30px;
+            width: initial;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 24px;
+            line-height: 30px;
+            margin-left: 138px;
+        }
+    }
+}

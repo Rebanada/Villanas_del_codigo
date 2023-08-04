@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  padding: 30px 45px;
+  border-top: solid 1px $color-box;
+  margin-top: 45px;
+
+  /*   display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    
+    */
+}
+
+.copy {
+  padding-top: 10px;
+  color: $color-box;
+}
+
+.menufooter {
+  margin: 20px 0 30px 0;
+  line-height: 1.43;
+}
+
+.menufooter a {
+  color: $secondary-color-text;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.imgfooter {
+  height: 45px;
+}

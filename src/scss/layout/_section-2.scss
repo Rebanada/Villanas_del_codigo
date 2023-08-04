@@ -1,0 +1,144 @@
+.QUINES-SOMOS {
+  font-size: 1.375rem;
+  font-weight: 500;
+  font-family: $primary-font-family;
+  line-height: 2.05;
+  text-align: center;
+  color: $primary-background-color;
+  display: block;
+  padding: 30px 15px;
+}
+
+.nombres {
+  margin: 15px auto;
+  font-family: $secondary-font-family;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: $primary-color-text;
+}
+
+.descripciones {
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  font-weight: normal;
+  color: $secondary-color-text;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.imagen {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 4px;
+  display: block;
+  border: lightgrey solid 5px;
+}
+.rrss {
+  width: 124px;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  gap: 17px;
+}
+
+.rrss li {
+  position: relative;
+}
+
+.rrss li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  background-color: $primary-background-color;
+  height: 2px;
+  margin-top: -1px;
+  width: 2px;
+  border-radius: 50%;
+}
+
+.rrss li:last-child::before {
+  display: none;
+}
+
+.logo-rrss {
+  width: 18px;
+  height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .QUINES-SOMOS {
+    padding: 50px 0 0 0;
+  }
+
+  .left-card {
+    display: flex;
+    margin: 50px 45px;
+  }
+
+  .imagen {
+    height: 40vh;
+    width: auto;
+  }
+
+  .info-card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+
+  .descripciones-left {
+    margin: 0;
+    text-align: left;
+  }
+
+  .right-card {
+    display: flex;
+    margin: 50px 45px;
+  }
+  .info-card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 30px;
+  }
+  .img-right {
+    order: 1;
+  }
+
+  .descripciones-right {
+    margin: 0;
+    text-align: right;
+  }
+  .nombres {
+    margin: 0;
+  }
+  .nav-rrss {
+    margin: 0;
+  }
+}
+
+.columna_central {
+  margin: 0 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .right-card {
+    display: flex;
+    margin: 50px 139px;
+  }
+  .left-card {
+    display: flex;
+    margin: 50px 139px;
+  }
+}
